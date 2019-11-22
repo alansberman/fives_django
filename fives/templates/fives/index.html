@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fives Game</title>
+</head>
+<body>
+<form method="post" >
+{% csrf_token %}
+{{form}}
+ 
+<button type="submit" class="btn btn-default">Guess!</button>
+</form>
+</body>
+</html>
